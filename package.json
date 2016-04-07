@@ -1,0 +1,28 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "description": "Web player",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tubaleviao/player.git"
+  },
+  "keywords": [
+    "player",
+    "music"
+  ],
+  "author": "Tubaleviao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tubaleviao/player/issues"
+  },
+  "homepage": "https://github.com/Tubaleviao/player#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "html": "0.0.10"
+  }
+}
