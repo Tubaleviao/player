@@ -1,0 +1,108 @@
+body {
+	font-family: "Courier New";	/* Yeah */
+	background-color: black; 
+	color: lime;
+	margin: 10px;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+footer {
+	right: 0;
+	bottom: 0;
+	position: fixed;
+}
+a{
+	margin: 5px;
+}
+a:link {
+	color: #00ff00;
+	text-decoration:none;
+}
+a:visited {
+	color: #00ff00;
+	text-decoration:none;
+}
+a:hover {
+	background-color:lime;
+	color:black;
+}
+input{
+	background-color: black;
+	border:1px solid #00BB00;
+	color:lime;
+	width:100px;
+}
+
+/* Player style sheet */
+
+.checkbox:not(.checked):hover{
+	box-shadow: 0px 0px 5px 1px lime;
+}
+.checkbox{
+	width: 32px; 
+    height: 32px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.random{
+	background: transparent url('/random.ico') no-repeat 0 50%;
+}
+.repeat{
+	background: transparent url('/repeat.ico') no-repeat 0 50%;	
+}
+.next{
+	background: transparent url('/next.ico') no-repeat 0 50%;		
+}
+.checked{
+	box-shadow: 0px 0px 5px 2px lime;
+}
+.music{
+	display: inline-block;
+}
+.music:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+ul{
+	padding: 0px;
+}
+.trash{
+	float: right;
+	display: inline-block;
+}
+.trash:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+li:nth-child(odd) { 
+	background: #001100; 
+}
+form{
+	display: inline-block;
+}
+.label {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	display: inline-block;
+	font-family: Arial;
+	font-size: 13.3333px;
+  background-color: black;
+	border:1px solid #00BB00;
+	color:lime;
+	cursor: pointer;
+	margin-right: 10px;
+}
+input[type="file"] {
+    display: none;
+}
