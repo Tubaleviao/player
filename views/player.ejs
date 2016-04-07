@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Player</title>
+		<link rel="shortcut icon" href="img/icon.ico"/>
+		<link rel="stylesheet" href="player.css"/>
+		<script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+		<script src="player.js"></script>
+		
+	</head>
+	<body>
+		<div class="body"><br />
+			<p id="np">Web audio player</p>
+			<div id="progress"><div id="value"></div></div>
+			<audio id="audio" src="" controls autoplay></audio> <br/>
+			<div class="checkbox random checked"></div>
+			<div class="checkbox repeat"></div>
+			<div class="checkbox next"></div><br/><br/>
+			<input type="text" class="search" placeholder="Search..."></input>
+			<form action="upload" method="post" enctype="multipart/form-data">
+				<div class="label">
+					<input type="file" name="songs" accept="audio/mp3" multiple />
+					Select Files
+				</div>
+				<input type="submit" value="Upload"/>
+			</form><br/>
+			
+			<ul class="musics"></ul>
+		</div>
+
+		<script>
+			var musicsJs = <%-JSON.stringify(musics)%>;
+			setMusics(musicsJs);
+			addMusics();
+		</script>
+
+	</body>
+</html>
